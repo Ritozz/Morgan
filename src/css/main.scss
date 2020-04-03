@@ -1,0 +1,195 @@
+
+@import 'fonts.scss';
+
+
+
+$font-PlayfairDisplay: 'PlayfairDisplay-Regular';
+$font-PoppinsBold: 'Poppins-Bold';
+$font-PoppinsLight: 'Poppins-Light';
+$font-PoppinsMedium: 'Poppins-Medium';
+$font-PoppinsRegular: 'Poppins-Regular';
+
+
+
+$primary: #FFBC6B; 
+
+
+
+@mixin star($height, $width, $top, $right){
+	position: absolute;
+	height: $height;
+	width: $width;
+	top: $top;
+	right: $right;
+}
+
+@mixin arrow($size, $borderR, $background){
+	height: $size;
+    width: $size;
+    border-radius: $borderR;
+    background: $background; 
+    margin-top: 77px;
+}
+
+
+
+.home{
+	background: url(../images/Rectangle31.png)no-repeat center 211px;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	height: 100vh;
+
+	.starsLB{
+		
+		position: absolute;
+		top: 56px;
+		right: 80px;
+
+		.starsLB__large{
+			background: url(../images/Star11.png) no-repeat;
+			@include star (165px, 165px, 0px, 1px);
+		}
+
+		.starsLB__medium{
+			background: url(../images/Star13.png) no-repeat;
+			@include star (97px, 97px, 207px, 0px);
+		}
+
+		.starsLB__small{
+			background: url(../images/Star12.png) no-repeat;
+			@include star (83px, 83px, 134px, 175px);
+		}
+	}
+
+	.starsRT{
+		
+		position: absolute;
+		top: 452px;
+		left: 299px;
+
+		.starsRT__large{
+			background: url(../images/Star11.png) no-repeat;
+			@include star (165px, 165px, 0px, 1px);
+		}
+
+		.starsRT__medium{
+			background: url(../images/Star13.png) no-repeat;
+			@include star (97px, 97px, 207px, 0px);
+		}
+
+		.starsRT__small{
+			background: url(../images/Star12.png) no-repeat;
+			@include star (83px, 83px, 134px, 175px);
+		}
+	}
+
+	.wrapper{
+		position: relative;
+
+		.home_btn{
+			position: absolute;
+			color: $primary;
+			font-weight: bold;
+			display: inline-block;
+			text-align: center;
+			bottom: 34px;
+			left: 92px;
+			font-size: 32px;
+			line-height: 0.5em;
+
+			p{
+				font-family: $font-PoppinsBold;
+				font-size: 12px;
+				margin-bottom: 0;
+				text-decoration: none;			}
+		}
+
+		background: #fff;
+		background-image: url(../images/logo-star1.png);
+		background-repeat: no-repeat;
+		border: 2px solid $primary;
+		border-radius: 20px;
+		width: 1009px;
+		height: 710px;
+		box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
+		padding: 41px 92px;
+
+		.slider{
+			
+			h2{
+				color: $primary;
+				font-family: $font-PlayfairDisplay;
+				font-size: 48px;
+			}
+
+			h4{
+				color: $primary;
+				font-family: $font-PoppinsMedium;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+.carousel-inner{
+	overflow: visible;
+}
+
+.carousel-control-prev-wrapper{
+	@include arrow(37px, 50%, $primary);
+    padding: 8px 10px 8px 7px;
+}
+
+.carousel-control-next-wrapper{
+	@include arrow(37px, 50%, $primary); 
+    padding: 8px 7px 8px 10px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev {
+    left: -40px;
+}
+
+.carousel-control-next {
+    right: -40px;
+}
+
+.carousel-indicators{
+	bottom: -50px;
+	li{
+		width: 12px;
+		height: 12px;
+		background: $primary;
+		border: none;
+		border-radius: 50%;
+	}
+}
+
+.carousel-item{
+		width: 821px;
+	a{
+		font-family: $font-PoppinsBold;
+		font-size: 16px;
+		position: absolute;
+		padding: 13px 10px;
+		background: $primary;
+		color: #fff;
+		display: inline-block;
+		box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
+		bottom: -150px;
+		left: 42%;
+		width: 135px;
+	}
+
+	.text{
+		font-family: $font-PoppinsRegular;
+		font-size: 18px;
+	}
+}
