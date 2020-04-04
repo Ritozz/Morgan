@@ -132,8 +132,7 @@
     border-radius: 20px;
     width: 1009px;
     height: 710px;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 41px 92px; }
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25); }
     .home .wrapper .home_btn {
       position: absolute;
       color: #FFBC6B;
@@ -149,14 +148,17 @@
         font-size: 12px;
         margin-bottom: 0;
         text-decoration: none; }
-    .home .wrapper .slider h2 {
+    .home .wrapper h2 {
       color: #FFBC6B;
       font-family: "PlayfairDisplay-Regular";
       font-size: 48px; }
-    .home .wrapper .slider h4 {
+    .home .wrapper h4 {
       color: #FFBC6B;
       font-family: "Poppins-Medium";
       font-size: 24px; }
+
+.wrapper_slide {
+  padding: 41px 92px; }
 
 .carousel-inner {
   overflow: visible; }
@@ -215,6 +217,44 @@
   .carousel-item .text {
     font-family: "Poppins-Regular";
     font-size: 18px; }
+
+.medals {
+  padding-inline-start: 0px; }
+  .medals .medals__block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    width: 170px; }
+    .medals .medals__block .firstMedal {
+      margin-top: 12px;
+      margin-bottom: 7px; }
+    .medals .medals__block img {
+      margin-bottom: 28px; }
+
+.previous, .next {
+  font-family: "Poppins-Bold";
+  font-size: 16px;
+  padding: 13px 10px;
+  background: #FFBC6B;
+  color: #fff;
+  display: inline-block;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 135px;
+  text-align: center;
+  margin-top: 120px; }
+
+.wrapper_medals {
+  padding: 41px 45px; }
 
 /*----768-992px---*/
 /*---576-768px---*/

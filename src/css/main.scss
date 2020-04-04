@@ -112,23 +112,24 @@ $primary: #FFBC6B;
 		width: 1009px;
 		height: 710px;
 		box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
-		padding: 41px 92px;
-
-		.slider{
 			
-			h2{
-				color: $primary;
-				font-family: $font-PlayfairDisplay;
-				font-size: 48px;
-			}
-
-			h4{
-				color: $primary;
-				font-family: $font-PoppinsMedium;
-				font-size: 24px;
-			}
+		h2{
+			color: $primary;
+			font-family: $font-PlayfairDisplay;
+			font-size: 48px;
 		}
+
+		h4{
+			color: $primary;
+			font-family: $font-PoppinsMedium;
+			font-size: 24px;
+		}
+		
 	}
+}
+
+.wrapper_slide{
+	padding: 41px 92px;	
 }
 
 .carousel-inner{
@@ -192,4 +193,49 @@ $primary: #FFBC6B;
 		font-family: $font-PoppinsRegular;
 		font-size: 18px;
 	}
+}
+
+.medals{
+	padding-inline-start: 0px;
+	.medals__block{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		text-align: center;
+		width: 170px;
+		.firstMedal{
+			margin-top: 12px;
+			margin-bottom: 7px;
+		}
+		img{
+			margin-bottom: 28px;
+		}
+	}
+}
+
+.previous, .next{
+	font-family: $font-PoppinsBold;
+	font-size: 16px;
+	padding: 13px 10px;
+	background: $primary;
+	color: #fff;
+	display: inline-block;
+	box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
+	width: 135px;
+	text-align: center;
+	margin-top: 120px;
+}
+
+
+.wrapper_medals{
+	padding: 41px 45px;
 }
