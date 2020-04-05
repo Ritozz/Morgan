@@ -39,7 +39,7 @@
 			<div class="starsRT__medium"></div>
 			<div class="starsRT__small"></div>
 		</div>
-<!-- 		<div class="wrapper wrapper_slide">
+		<div class="wrapper wrapper_slide" id="wrapper_slide">
 			<a href="#home" class="home_btn"><i class="fas fa-home"></i>
 				<p class="home_text">Home</p>
 			</a>
@@ -77,7 +77,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn">Skip Benefits</a>
+							<a href="#" class="btn btn_skip">Skip Benefits</a>
 						</div>
 						<div class="carousel-item">
 							<div class="row justify-content-center">
@@ -94,7 +94,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn">Skip Benefits</a>
+							<a href="#" class="btn btn_skip">Skip Benefits</a>
 						</div>
 						<div class="carousel-item">
 							<div class="row justify-content-center">
@@ -111,7 +111,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn">Skip Benefits</a>
+							<a href="#" class="btn btn_skip">Skip Benefits</a>
 						</div>
 						<div class="carousel-item">
 							<div class="row justify-content-center">
@@ -128,7 +128,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn">Sign Up</a>
+							<a href="#" class="btn" id="btn">Sign Up</a>
 						</div>						
 						<a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
 							<div class="carousel-control-prev-wrapper">
@@ -139,16 +139,14 @@
 							<div class="carousel-control-next-wrapper">
 								<span class="carousel-control-next-icon"></span>
 							</div>
-						</a>													
+						</a>												
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 
-
-
-		<div class="wrapper wrapper_medals">			
+		<div class="wrapper wrapper_medals" id="wrapper_medals">		
 			<div class="row">
 				<div class="col-12 text-center">
 					<h2 class="title">
@@ -190,15 +188,107 @@
 					</ul>
 				</div>
 			</div>
-			<div class="row">
-				<div class="offset-1 col-10">
+			<div class="row static">
+				<div class="offset-1 col-10 static">
 					<div class="buttons d-flex justify-content-around">
-						<a href="#" class="previous">Previous</a>
-						<a href="#" class="next">Next</a>
+						<button href="#" class="previous" id="medals_btn_back">Previous</button>
+						<button href="#" class="next" id="medals_btn_next">Next</button>
 					</div>
 				</div>
 			</div>		
 		</div>
+
+
+		<div class="wrapper wrapper_form" id="wrapper_form">			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2 class="title">
+						Sign-Up
+					</h2>
+					<p class="text text-center">
+						Fill out the fields
+					</p>
+				</div>
+			</div>	
+			<div class="row static">
+				<div class="col-12 static">
+					<form action="" class="form">
+						<div class="d-flex flex-column">
+							<input type="text" name="Fname" placeholder="First name*" required>
+							<input type="text" name="Lname"placeholder="Last name*" required>
+							<input type="text" name="Bname" placeholder="Business name*" required>
+							<input type="email" name="Email" placeholder="Email*" required>
+							<input type="password" name="password" placeholder="Password*" required>
+							<input type="password" name="Cpassword" placeholder="Confirm Password*" required>
+							<button class="previous form_btn" id="form_btn_back">Previous</button>
+							<button class="next form_btn" id="form_btn_next" type="submit">Next</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="wrapper wrapper_account" id="wrapper_account">			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2 class="title">
+						Sign-Up
+					</h2>
+					<p class="text text-center">
+						Payment Details
+					</p>
+				</div>
+			</div>	
+			<div class="row static">
+				<div class="col-12 static">
+					<form action="" class="form">
+						<div class="d-flex flex-column">
+							<input type="text" name="cardNum" placeholder="Credit Card Number" maxlength="16" required>
+							<input type="password" name="CVV" placeholder="CVV" maxlength="3" required>
+							<input type="text" name="ZIP" placeholder="ZIP" required>
+							<input type="text" name="ExpDate" placeholder="Expiration Date mm/yyyy" maxlength="7" required>
+							<p class="text-center">$19.95 per month for membership</p>
+							<button class="previous form_btn" id="account_btn_back">Previous</button>
+							<button class="next form_btn" id="account_btn_next" type="submit">Sign up</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="wrapper_success" class="wrapper_last">
+			<div class="wrapper wrapper_success text-center d-flex flex-column justify-content-center align-items-center">		
+				<h1 class="title">
+					Sign-Up
+				</h1>
+				<img src="build/images/procedure1.png" alt="success">
+				<p>
+					Your membership has been successfully submitted. Please check your email to confirm your account.
+				</p>
+				<button class="next form_btn btn_cancel">Close</button>
+			</div>
+		</div>
+		
+
+		<div class="wrapper_last" id="wrapper_unsuccess">
+			<div class="wrapper wrapper_success text-center d-flex flex-column justify-content-center align-items-center" >	
+				<h1 class="title">
+					Sign-Up
+				</h1>
+				<img src="build/images/procedure2.png" alt="unsuccess">
+				<p>
+					Something went wrong. Please go back and try again.
+				</p>
+				<div class="buttons">
+					<button class="next form_btn" id="btn_unsuccess">Back</button>
+					<button class="next form_btn btn_cancel">Close</button>
+				</div>
+			</div>
+		</div>
+		
+
+
 	</section>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous"> 
 
